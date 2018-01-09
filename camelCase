@@ -1,0 +1,33 @@
+#camelCase
+
+sentance=input("Write a name for conversion to camelCase.")
+
+words=sentance.split(" ")
+
+camelCase=""
+
+def okay(word):
+    return word.isalnum()
+
+
+error=False
+
+for i in words:
+    print (i)
+for i in words:
+    if okay(i):
+        if i==words[0]:
+            if i[0].isdigit():
+                print("this will not return a valid python variable name. Please do not start name with a number.")
+                error=True
+            i=words[0].lower()
+            camelCase=camelCase+i
+        else:
+            i=i.capitalize()
+            camelCase=camelCase+i
+    else:
+        print("this will not return a valid python variable name. Please remove special characters and try again.")
+        error=True
+
+if not error:
+    print (camelCase) #good so far

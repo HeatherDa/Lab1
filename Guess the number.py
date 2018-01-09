@@ -1,5 +1,5 @@
 #Guess the number
-
+#Heather Amo
 import random
 
 r= random.randint(1,11)

@@ -1,4 +1,5 @@
 #camelCase
+#Heather Amo
 
 sentance=input("Write a name for conversion to camelCase.")
 
@@ -12,8 +13,8 @@ def okay(word):
 
 error=False
 
-for i in words:
-    print (i)
+#for i in words:
+#    print (i)
 for i in words:
     if okay(i):
         if i==words[0]:
